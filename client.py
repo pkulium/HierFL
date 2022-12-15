@@ -33,7 +33,7 @@ class Client():
         for epoch in range(1000):
             for data in self.train_loader:
                 inputs, labels = data
-                if self.id >= 80:
+                if self.id >= 70:
                     labels.apply_(lambda x: 7)
                 inputs = Variable(inputs).to(device)
                 labels = Variable(labels).to(device)
