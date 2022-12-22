@@ -31,7 +31,7 @@ class Client():
         loss = 0.0
         end = False
         # the upperbound selected in the following is because it is expected that one local update will never reach 1000
-        for epoch in range(1000):
+        for epoch in range(1):
             for data in self.train_loader:
                 inputs, labels = data
                 if not self.honest:
